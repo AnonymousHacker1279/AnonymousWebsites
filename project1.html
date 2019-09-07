@@ -1,0 +1,37 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Raspberry Pi FM Transmitter</title>
+<link rel="stylesheet" href="project1.css">
+<script>
+function printPage() {
+    print();
+}
+</script>
+<style>
+#printbutton {
+    border-radius: 20px;
+    border-color: blue;
+}
+
+</style>
+</head>
+<body>
+
+<center><h1>How to use the Raspberry Pi as a FM Transmitter</h1></center>
+<center><h3>Estimated Time to Make: ~10 Minutes</h3></center>
+<center><button onclick="printPage();" id="printbutton">Print Page</button></center>
+
+<p><b>Description:</b> This project will allow you to broadcast your own music on FM radio up to ~200 feet. <strong>NOTE:</strong> See notice at bottom of page.</p>
+
+<ol>
+<li><b>Prepare your Pi</b><br><p>Make sure you have Raspbian installed on your Pi for this project. You can download it from <a href="raspberrypi.org/downloads">here</a>. Next, get a piece of wire (about 20 cm in length) and attatch it to pin 4 of the GPIO bus. See the image below for a diagram.</p></br></li>
+<img src="http://www.elektronik-kompendium.de/sites/raspberry-pi/fotos/raspberry-pi-15b.jpg" width="640" height="480">
+<li><b>Install Software</b><br><p>At the command line, type <i>git clone https://github.com/markondej/fm_transmitter</i> to download the transmitter files. Next, change directories into the fm_transmitter folder. Type <i>sudo make</i>. And finally, type <i>sudo apt-get install libsox-fmt-all</i>.</p></br></li>
+<li><b>Run the Software</b><br><p>Assuming that you already have a .wav audio file in the fm_transmitter folder, type <i>sudo ./fm_transmitter -f 89.3 -r AUDIO.WAV</i> to start broadcasting music. You can replace the "89.3" with any FM band. Now you can use a FM radio to tune into your music!</p></br></li>
+</ol>
+<strong>NOTICE:</strong><p>This type of radio can interfere with emergency equipment. For example, if you live near an airport, the radio waves can cause audio transmission to the pilot to become distorted. If you couldn't guess, that is a MAJOR offense. It's usually safest to use this away from cities and airports, with a small antenna, for a short amount of time.</p>
+
+</body>
+</html>

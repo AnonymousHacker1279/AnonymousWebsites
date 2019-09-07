@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Get Started with HTML</title>
+<link rel="stylesheet" href="default.css">
+<script>
+function printPage() {
+	print();
+}
+
+function showAnswer() {
+	document.getElementById('headerAnswers').style.display = "block";
+}
+
+</script>
+<style>
+#printbutton {
+	border-radius: 20px;
+	border-color: blue;
+}
+</style>
+</head>
+<body>
+<center>
+<h1>Get Started with HTML</h1>
+<h3>Description: Learn the language of the internet</h3>
+<button onclick="printPage();" id="printbutton">Print Page</button>
+<p>HyperText Markup Language, or HTML, builds almost every website in existance. It's an easy to learn language and is very popular. In this tutorial, you will learn how to create your first HTML script.</p>
+</center>
+<ol>
+	<li><b>Get a text editor:</b><br> <p>Usually, an application for text editing will be included with your OS, such as Notepad. These editors will work fine. However, you can use more advanced editors such as Notepad++ and Visual Studio to make it easier to work. For this tutorial, we will use Notepad++.</p></li>
+	<img src="notepad++.png" height="480" width="620">
+	<p>The default Notepad++ screen can be seen above.</p>
+	<br>
+	<li><b>Learn some syntax:</b><br> <p>First, we'll show an example. Recreate this code in your text editor, and open it with your web browser.</p></li>
+	<img src="notepad++firstscripthtml.png" height="480" width="620">
+	<p>firstscript.html code.</p>
+	<img src="run_firstscripthtml.png" height="480" width="620">
+	<p>The script when opened in Microsoft Edge.</p>
+	<br>
+	<p>Take a moment to compare what you wrote and what you see in the web browser. Notice how the &lt;title&gt; tag reads the same as the tab title, and how the &lt;h1&gt; and &lt;p&gt; tags read the same as the header and paragraph. See what we mean when we say HTML is easy to learn? &lt;title&gt; tags represent page titles, &lt;h1&gt; tags represent headers, and &lt;p&gt; tags represent paragraphs. You can choose the header size by using a different number (only 1-6 are supported).</p>
+	<img src="run_firstscriptheaders.png" height="480" width="620">
+	<p>Try to edit the code using what you know to get the result above.</p>
+	<br>
+	<input type="button" name="answer" value="Show Answer" onclick="showAnswer();" />
+	<br>
+	<div id="headerAnswers" style="display:none;" class="answer_list" ><p>Use &lt;h1&gt; through &lt;h6&gt; tags to create headers of different sizes.</p></div>
+	<p>Now that you know what those tags do, you are probably wondering what the other tags do. Simple enough, the &lt;!DOCTYPE HTML&gt; tag tells the computer that the document is written in HTML. The &lt;head&gt; tag is content you don't see on the screen, such as style sheets or JavaScript code. Finally, the &lt;body&gt; tag contains content that you see, like the headers and paragraphs.</p>
+	<br>
+	<li><b>Display images:</b><br> <p>Sometimes, simple text isn't enough. Images can make a website look much better. To add images, add this code to your HTML script.</p></li>
+	<img src="notepad++firstscriptimage.png" height="480" width="620">
+	<p>Add the &lt;img&gt; tag to your code. You can change the image link to whatever you want (local files work too).</p>
+	<br>
+	<img src="run_firstscriptimage.png" height="480" width="620">
+	<p>The script's result when opened in a web browser.</p>
+	<br>
+	<p>Congratulations, you've completed this tutorial! Now you can make your own pages and with our other tutorial, <a href="/tutorials/projects/host-a-website-raspberrypi.html">hosting a website with a Raspberry Pi,</a> you can make a website that everyone can use.</p>
+</ol>
+</body>
+</html>

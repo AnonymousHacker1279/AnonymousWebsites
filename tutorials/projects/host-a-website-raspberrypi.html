@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Host a website with Raspberry Pi</title>
+<link rel="stylesheet" href="default.css">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="theme-color" content="#ffffff">
+
+<script>
+function printPage() {
+	print();
+}
+</script>
+<style>
+#printbutton {
+	border-radius: 20px;
+	border-color: blue;
+}
+</style>
+</head>
+<body>
+<center>
+<h1>How to Host a Website using Raspberry Pi</h1>
+<h3>Estimated Time to Make: ~30</h3>
+<button onclick="printPage();" id="printbutton">Print Page</button>
+<p>Description: This project will allow you to host HTML-encoded pages online.</p>
+<br>
+<p>Have you ever wanted to make a website? Or do you know how, but struggle to get it online? Want to do it for free? Well, by using the Raspberry Pi, you can! You just need to know how to program in HTML, the "internet's language".</p>
+<br>
+</center>
+<ol>
+	<li><b>Prepare your Raspberry Pi: </b><br><p>You will need to have Raspbian installed on your device for this to work. You can download the image <a href="https://raspberrypi.org/downloads">here.</a>After you have installed Raspbian (or if you already had it installed), open Terminal and type <i>sudo apt-get update && sudo apt-get upgrade</i> to update the Pi.</p></li>
+	<br>
+	<img src="updatepi.png" height="480" width="640">
+	<p>Sometimes, a reboot is required. If the terminal says you should reboot, use <i>sudo reboot</i> to reboot the device.</p>
+	<br>
+	<li><b>Install Apache: </b><br><p>At the terminal, type <i>sudo apt-get install apache2</i> to install the Apache web server. Once the install is complete, open a web browser on another device and type your Pi's IP address. If you don't know the IP address, type <i>ifconfig</i> and network information will appear.</p></li>
+	<img src="default_apache_page.jpg" height="480" width="320">
+	<br>
+	<li><b>Add your own HTML files: </b><br><p>You probably don't want the default page as your website. You can use your own file in place of the default. Go to "/var/www/html" and delete the file named "index.html". Replace this with your own file, naming it "index.html". Try to go back to your website, and your page will appear!</p></li>
+	<br>
+	<li><b>Make your website available from outside your network: </b><br><p>Due to the way web servers work, you won't be able to access your website anywhere except from within your own network. However, you can use port forwarding to bypass this restriction. Log onto your router's configuration page and select the port forwarding option. You need to forward port 80 and port 443 (HTTP and SSL). After you have completed this, type the Pi's GLOBAL IP address into a browser. This can be found by typing "What's my IP" into a web search.</p></li>
+	<br>
+	<li><b>Use a dynaminc DNS server instead of an IP address: </b><br><p>You probably don't want to make people remember a set of numbers to access your website. No other website only has access through an IP address. However, you can use a free website called "noip.org". This website lets you use a dynamic DNS name to route to your IP. The end result is people using a website URL instead of an IP address. Go to "noip.org" and create a free account. Follow the steps on their website to make a DNS name.</p></li>
+	<br>
+	<p>Now that your website is completed, share your URL with others and expand your site with more pages!</p>
+</ol>
+<h3><b>Did you know that our website is hosted using Apache?</b> We followed the same steps you did to make your website!</h3>
+</center>
+</body>
+</html>

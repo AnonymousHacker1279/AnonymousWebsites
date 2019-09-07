@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Leaving Page</title>
+<link rel="stylesheet" href="experimentalwarningstyle.css">
+</head>
+<body>
+<center>
+<h1>You are leaving this website.</h1>
+<p>Continue to external website "KProxy"?</p>
+<button id="return" class="float-left submit-button" >Go Back</button>
+
+<script type="text/javascript">
+    document.getElementById("return").onclick = function () {
+        location.href = "main.html";
+    };
+</script>
+<button id="continue" class="float-left submit-button" >Continue</button>
+
+<script type="text/javascript">
+    document.getElementById("continue").onclick = function () {
+        location.href = "http://37.187.147.158";
+    };
+</script>
+
+<h3 style="border-top-style: solid; ">Description of External Website</h3>
+<p>KProxy is an web-based proxy. A proxy allows you to bypass network restrictions by changing the devices Internet Protocol (IP) address and routing data packets through another location (usually another country). KProxy is free and doesn't require any form of verification. You can also upgrade to pro service, which gives you priority over others. Extensions and programs are also availiable.</p>
+</body>
+</html>
