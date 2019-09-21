@@ -22,3 +22,8 @@ p {
 	color: #5B9EFB;
 	font-size: 10px;
 }
+.center {
+	margin-left: auto;
+	margin-right: auto;
+	text-align:center;
+  }

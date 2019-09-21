@@ -18,3 +18,8 @@ button {
 	font-family: arial, Helvetica, sans-serif;
 	border-radius: 40px;
 }
+.center {
+	margin-left: auto;
+	margin-right: auto;
+	text-align:center;
+  }
