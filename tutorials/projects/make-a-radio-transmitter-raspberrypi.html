@@ -27,7 +27,7 @@ function printPage() {
 
 <ol>
 <li><b>Prepare your Pi</b><br><p>Make sure you have Raspbian installed on your Pi for this project. You can download it from <a href="https://raspberrypi.org/downloads">here</a>. Next, get a piece of wire (about 20 cm in length) and attatch it to pin 4 of the GPIO bus. See the image below for a diagram.</p></br></li>
-<img src="pigpio.png" width="820" height="320">
+<img src="https://anonymoushacker1279.github.io/AnonymousWebsites/tutorials/images/rpi_gpio.png" width="820" height="320">
 <li><b>Install Software</b><br><p>At the command line, type <i>git clone https://github.com/markondej/fm_transmitter</i> to download the transmitter files. Next, change directories into the fm_transmitter folder. Type <i>sudo make</i>. And finally, type <i>sudo apt-get install libsox-fmt-all</i>.</p></br></li>
 <li><b>Run the Software</b><br><p>Assuming that you already have a .wav audio file in the fm_transmitter folder, type <i>sudo ./fm_transmitter -f 89.3 -r AUDIO.WAV</i> to start broadcasting music. You can replace the "89.3" with any FM band. Now you can use a FM radio to tune into your music!</p></br></li>
 </ol>
