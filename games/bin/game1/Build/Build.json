@@ -2,7 +2,7 @@
 "companyName": "AnonymousHacker1279",
 "productName": "Shoot up a planet",
 "productVersion": "1.5",
-"dataUrl": "http://download1589.mediafire.com/qm8rzro1ewvg/h6ph2x1s8ghmei1/Build.data.unityweb",
+"dataUrl": "https://download1589.mediafire.com/qm8rzro1ewvg/h6ph2x1s8ghmei1/Build.data.unityweb",
 "wasmCodeUrl": "Build.wasm.code.unityweb",
 "wasmFrameworkUrl": "Build.wasm.framework.unityweb",
 "graphicsAPI": ["WebGL 1.0"],
